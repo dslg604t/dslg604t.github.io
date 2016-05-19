@@ -43,3 +43,7 @@ function updateTable() {
 	
 	document.getElementById('total').innerHTML = total;
 }
+
+function calculate() {
+	document.getElementById("demo").innerHTML = (income.value > money.value/time.value);
+}
