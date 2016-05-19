@@ -45,5 +45,7 @@ function updateTable() {
 }
 
 function calculate() {
-	document.getElementById('result').innerHTML = (income.value > money.value/time.value);
+	var worth = true;
+	worth = income.value > money.value/time.value;
+	document.getElementById('result').innerHTML = worth;
 }
