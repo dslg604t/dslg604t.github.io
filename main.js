@@ -46,6 +46,6 @@ function updateTable() {
 
 function calculate() {
 	var worth = true;
-	worth = income.value > money.value/time.value;
+	worth = income.value < money.value/(time.value/60);
 	document.getElementById('result').innerHTML = worth;
 }
