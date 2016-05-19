@@ -47,5 +47,10 @@ function updateTable() {
 function calculate() {
 	var worth = true;
 	worth = income.value < money.value/(time.value/60);
-	document.getElementById('result').innerHTML = worth;
+	if worth = true {
+		document.getElementById('result').innerHTML = "Yes";
+	}
+	else {
+		document.getElementById('result').innerHTML = "No";
+	}
 }
