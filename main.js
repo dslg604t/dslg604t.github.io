@@ -12,6 +12,23 @@ var EBTG;
 
 var total;
 
+$(function() {
+
+$.ajax({
+    type: "GET",
+    dataType: "jsonp",
+    cache: false,
+    url: "https://api.instagram.com/v1/users/479540/media/recent/?access_token=479540.69e3081.ef47b766ba0948498fb0fd8a0ae02104",
+    success: function(data) {
+        for (var i = 0; i < 1; i++) {
+          console.log(data);
+            $("#instagram").append("<img src='" + data.data.images.thumbnail.url+ "'></img>");
+        }
+    }
+});
+});
+
+
 function analyzeMana() {
 
 }
