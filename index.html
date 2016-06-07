@@ -47,10 +47,11 @@
 			<br>
 			Also, you can follow me on instagram at @dslg604t!
 			<br>
+			<br>
+			</h3>
 			<div class="instagram">
 				<p id="instafeed"></p>
 			</div>
-			</h3>
 		</div>
 	</div>
 	
@@ -132,7 +133,7 @@
 	Total Lands
 	</div>
 	<div class="col-md=2">
-	<output id="total" type="number">
+	<output id="total" type="number"></output>
 	</div>
 	</div>
 
@@ -144,7 +145,6 @@
 	<div id="basicLand" class="collapse in">
 	<div class="row">
 	<div class="col-md-2">
-	<p>
 	  <label for="basicW">Plains:</label>
 	  <input id="basicW" type="number" class="form-control" min="0" onchange="updateTable()">
 	</div>
@@ -163,7 +163,6 @@
 	<div class="col-md-2">
 	  <label for="basicG">Forests:</label>
 	  <input id="basicG" type="number" class="form-control" min="0" onchange="updateTable()">
-	</p>
 	</div>
 	</div>
 	</div>
@@ -174,7 +173,6 @@
 	<div id="alliedFetch" class="collapse">
 	<div class="row">
 	<div class="col-md-2">
-	<p>
 	  <label for="fetchWU" title="Flooded Strand">WU Fetch:</label>
 	  <input id="fetchWU" type="number" class="form-control" min="0" onchange="updateTable()">
 	</div>
@@ -193,7 +191,6 @@
 	<div class="col-md-2">
 	  <label for="fetchGW" title="Windswept Heath">GW Fetch</label>
 	  <input id="fetchGW" type="number" class="form-control" min="0" onchange="updateTable()">
-	</p>
 	</div>
 	</div>
 	</div>
@@ -204,7 +201,6 @@
 	<div id="enemyFetch" class="collapse">
 	<div class="row">
 	<div class="col-md-2">
-	<p>
 	  <label for="fetchWB" title="Marsh Flats">WB Fetch:</label>
 	  <input id="fetchWB" type="number" class="form-control" min="0" onchange="updateTable()">
 	</div>
@@ -223,7 +219,6 @@
 	<div class="col-md-2">
 	  <label for="fetchBG" title="Verdant Catacombs">BG Fetch</label>
 	  <input id="fetchBG" type="number" class="form-control" min="0" onchange="updateTable()">
-	</p>
 	</div>
 	</div>
 	</div>
@@ -234,7 +229,6 @@
 	<div id="alliedShock" class="collapse">
 	<div class="row">
 	<div class="col-md-2">
-	<p>
 	  <label for="shockWU" title="Hallowed Fountain">WU Shock:</label>
 	  <input id="shockWU" type="number" class="form-control" min="0" onchange="updateTable()">
 	</div>
@@ -253,7 +247,6 @@
 	<div class="col-md-2">
 	  <label for="shockGW" title="Temple Garden">GW Shock</label>
 	  <input id="shockGW" type="number" class="form-control" min="0" onchange="updateTable()">
-	</p>
 	</div>
 	</div>
 	</div>
@@ -264,7 +257,6 @@
 	<div id="enemyShock" class="collapse">
 	<div class="row">
 	<div class="col-md-2">
-	<p>
 	  <label for="shockWB" title="Godless Shrine">WB Shock:</label>
 	  <input id="shockWB" type="number" class="form-control" min="0" onchange="updateTable()">
 	</div>
@@ -283,7 +275,6 @@
 	<div class="col-md-2">
 	  <label for="shockBG" title="Overgrown Tomb">BG Shock</label>
 	  <input id="shockBG" type="number" class="form-control" min="0" onchange="updateTable()">
-	</p>
 	</div>
 	</div>
 	</div>
@@ -304,19 +295,17 @@
 	<div id="menu1" class="tab-pane fade">
 		<div class="container">
 		<h3>Is it worth your time?</h3>
-		<p>
 			<label for="time" title="time">How long will it take? (minutes)</label>
 	  		<input id="time" type="number" class="form-control" min="0">
 	  		<label for="money" title="money">How much will you save?</label>
 	  		<input id="money" type="number" class="form-control" min="0">
 	  		<label for="income" title="income">How much money do you make an hour?</label>
-	  		<input id="income" type="income" class="form-control" min="0">
+	  		<input id="income" type="number" class="form-control" min="0">
 	  		
 	  		<br>
 			<button type="button" class="btn btn-info" onclick="calculate()">Calculate</button>
 			
 			<p id = "result">Is it worth it?</p>
-		</p>
 		</div>
 	</div>
 	
@@ -330,6 +319,5 @@
 	</div>
 
 	</div>
-</div>
 </body>
 </html>
